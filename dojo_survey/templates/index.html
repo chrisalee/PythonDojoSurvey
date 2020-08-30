@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style_dsurvey.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+
+
+
+    <title>Dojo Survey Index</title>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <form action='/results' method='POST'>
+            <p>Your Name:<input type='text' name='your_name'>
+                <p>Dojo Location: <select name="location"> </p>
+                <option value="Chicago">Chicago</option>
+                <option value="Cincinnati">Cincinnati</option>
+                <option value="Indianapolis">Indianapolis</option>
+                </select>
+            </p>
+            <p>Language:
+                <select name="language">
+                    <option value="Python">Python</option>
+                    <option value="Boss Hogg">Boss Hogg</option>
+                    <option value="Cheyeah">Cheyeah</option>
+                </select>
+            </p>
+            <p>Comment Please (Not Optional):</p>
+            <textarea name="comment" rows="5" cols="80"></textarea>
+            <input type='submit' value='Button'>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

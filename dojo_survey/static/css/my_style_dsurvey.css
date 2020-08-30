@@ -1,0 +1,26 @@
+*{
+    background-color: grey;
+}
+
+form{
+    border: 5px solid red;
+    width: 300px;
+    height: 100px;
+    padding: 30px;  
+}
+
+p{
+    color: gold;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+.box{
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px, solid green;
+}
